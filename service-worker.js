@@ -1,4 +1,4 @@
-const CACHE_NAME = "aneudys-links-v2";
+const CACHE_NAME = "aneudys-links-v3";
 const CORE_ASSETS = [
     "./",
     "./index.html",
@@ -16,6 +16,13 @@ self.addEventListener("install", (event) => {
             .then((cache) => cache.addAll(CORE_ASSETS))
             .then(() => self.skipWaiting())
     );
+});
+
+// Allow the page to tell the worker to skip waiting (helpful during deploys)
+self.addEventListener("message", (event) => {
+    if (event.data && event.data.type === "SKIP_WAITING") {
+        self.skipWaiting();
+    }
 });
 
 self.addEventListener("activate", (event) => {
