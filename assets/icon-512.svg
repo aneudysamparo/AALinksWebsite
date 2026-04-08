@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+    <title>Aneudys Amparo app icon large</title>
+    <defs>
+        <linearGradient id="bg" x1="64" x2="448" y1="48" y2="464" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7ce9ff"></stop>
+            <stop offset="1" stop-color="#ffba72"></stop>
+        </linearGradient>
+    </defs>
+    <rect width="512" height="512" rx="136" fill="#06101d"></rect>
+    <rect x="32" y="32" width="448" height="448" rx="118" fill="url(#bg)"></rect>
+    <circle cx="392" cy="134" r="44" fill="#f4f7fb" opacity="0.24"></circle>
+    <path d="M160 368l80.6-208h15l75.4 208h-48.4l-12.8-36.8h-52.2L204.8 368H160zm70.8-75.2H259L244.9 252l-14.1 40.8z" fill="#07111f"></path>
+    <path d="M282.2 194h52.8v35.8h-52.8z" fill="#07111f"></path>
+</svg>

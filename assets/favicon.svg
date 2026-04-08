@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+    <title>Aneudys Amparo favicon</title>
+    <defs>
+        <linearGradient id="bg" x1="8" x2="56" y1="6" y2="58" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#7ce9ff"></stop>
+            <stop offset="1" stop-color="#ffba72"></stop>
+        </linearGradient>
+    </defs>
+    <rect width="64" height="64" rx="18" fill="#06101d"></rect>
+    <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#bg)"></rect>
+    <path d="M21 46L31.8 18h1.9L44 46h-6.5l-1.7-4.9h-7l-1.7 4.9H21zm9.5-10.1h3.8l-1.9-5.6-1.9 5.6z" fill="#07111f"></path>
+    <path d="M37.4 22.4h7v4.8h-7z" fill="#07111f"></path>
+</svg>
