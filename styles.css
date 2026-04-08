@@ -109,7 +109,7 @@ a {
     margin: auto;
     display: grid;
     gap: 1.25rem;
-    align-items: stretch;
+    align-items: start;
 }
 
 .glass-card {
@@ -438,6 +438,53 @@ a {
     border: 1px solid rgba(255, 186, 114, 0.12);
 }
 
+/* Featured card styling for attention */
+.feature-link.featured {
+    border-color: rgba(255, 186, 114, 0.22);
+    box-shadow: 0 22px 60px rgba(255, 186, 114, 0.06);
+    background: linear-gradient(140deg, rgba(255, 186, 114, 0.06), rgba(11, 19, 35, 0.96));
+    animation: feature-pulse 6s ease-in-out infinite;
+}
+
+@keyframes feature-pulse {
+    0% { box-shadow: 0 10px 40px rgba(255,186,114,0.03); }
+    50% { box-shadow: 0 30px 80px rgba(255,186,114,0.06); }
+    100% { box-shadow: 0 10px 40px rgba(255,186,114,0.03); }
+}
+
+.lead {
+    margin: 0.25rem 0 0.35rem;
+    color: var(--text);
+    font-size: 0.98rem;
+    font-weight: 600;
+}
+
+.link-actions {
+    display: grid;
+    gap: 0.5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.link-cta {
+    display: inline-block;
+    padding: 0.35rem 0.7rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #08101a;
+    background: linear-gradient(90deg, #ffba72 0%, #ffd59b 100%);
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.link-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.16);
+}
+
 .link-arrow {
     width: 3.2rem;
     aspect-ratio: 1;
@@ -562,6 +609,34 @@ a {
 
     .site-footer p {
         border-radius: 1.25rem;
+    }
+
+    /* Make social link labels always visible on small screens (no hover) */
+    .social-links {
+        gap: 0.6rem;
+    }
+
+    .social-link {
+        min-height: auto;
+        padding: 0.65rem 0.5rem;
+        display: grid;
+        gap: 0.35rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .social-link::after {
+        /* place label in normal flow under the icon */
+        position: static;
+        left: auto;
+        bottom: auto;
+        transform: none;
+        opacity: 1;
+        margin-top: 0.35rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.92);
+        transition: none;
     }
 }
 
