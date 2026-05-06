@@ -246,6 +246,21 @@ a {
     font-size: 0.95rem;
 }
 
+a.status-pill {
+    text-decoration: none;
+    transition:
+        transform 220ms ease,
+        border-color 220ms ease,
+        box-shadow 220ms ease;
+}
+
+a.status-pill:hover,
+a.status-pill:focus-visible {
+    transform: translateY(-3px);
+    border-color: rgba(91, 242, 141, 0.5);
+    box-shadow: 0 14px 32px rgba(91, 242, 141, 0.12);
+}
+
 .social-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(4.5rem, 1fr));
@@ -406,15 +421,6 @@ a {
     align-self: center;
 }
 
-/* For featured cards stack CTA+arrow but keep them centered vertically */
-.feature-link.featured .link-actions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
 /* Make the 'Launching soon' tag align nicely with the title */
 .tag-soon {
     display: inline-flex;
@@ -521,13 +527,6 @@ a {
     font-weight: 600;
 }
 
-.link-actions {
-    display: grid;
-    gap: 0.5rem;
-    justify-items: center;
-    align-items: center;
-}
-
 .link-cta {
     display: inline-block;
     padding: 0.35rem 0.7rem;
@@ -542,9 +541,9 @@ a {
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.link-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 26px rgba(0,0,0,0.16);
+.link-copy .link-cta {
+    align-self: flex-start;
+    margin-top: 0.5rem;
 }
 
 .link-arrow {
